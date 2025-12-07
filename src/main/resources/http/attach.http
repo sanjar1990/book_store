@@ -1,0 +1,27 @@
+### upload file from com to DB
+POST http://localhost:8080/api/v1/attach/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="pexels-pixabay-60597.jpg"
+
+< C:\Users\ASUS\Pictures\pexels-pixabay-60597.jpg
+###GET ATTACH
+GET https://api.kitabu.uz/api/v1/attach/open/8338d7cd-6fc4-4738-87b8-de1a1e42d521.jpg
+###Get All
+GET http://localhost:8081/api/v1/attach/listOfAttaches?page=1&size=3
+###OPEn
+GET http://localhost:9090/api/v1/attach/open/cbeac652-17fe-48ae-806f-b76a2cbfce74.jpg
+
+
+### DELETE
+DELETE http://localhost:9090/api/v1/attach/delete/2be53fe0-5d96-413c-9f32-79230b1f1bdb.jpg
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTkxNzU0MDgsInBob25lIjoiOTk4OTc1MTg3MTYxIiwicm9sZXMiOiJST0xFX0FETUlOLCBST0xFX1VTRVIiLCJleHAiOjE3MTk0MzQ2MDgsImlzcyI6ImtpdGFidSAgdGVzdCBwb3J0YWxpIn0.V0Qa6HIJRrUUhxvn8oRMZZYYBDQ7u6MLe9NkIvsamCepjuFqPlJqUhuSTkBzqbZS9xt0xTjER1Ahx6tg_x5Ykw
+
+
+### DELETE PUBLIC
+DELETE http://localhost:9090/api/v1/attach/delete/cbeac652-17fe-48ae-806f-b76a2cbfce74.jpg
+
+
+###Get All
+GET http://localhost:9090/api/v1/attach/listOfAttaches

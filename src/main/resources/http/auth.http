@@ -1,0 +1,79 @@
+### login
+
+POST http://localhost:9090/api/v1/auth/login
+Content-Type: application/json
+Accept-Language: uz
+
+{
+  "phone": "+998915721213",
+  "password": "123456"
+}
+
+### Login production
+POST https://api.kitabu.uz/auth/login
+Content-Type: application/json
+
+{
+  "phone": "931236547",
+  "password": "77777"
+}
+
+### registration
+POST http://localhost:9090/api/v1/auth/registration
+Content-Type: application/json
+Accept-Language: uz
+
+{
+  "phone": "+998941785150",
+  "password": "123456",
+  "name": "Korzinka",
+  "surname": "Testov "
+}
+### reg validation
+POST http://localhost:8080/api/v1/auth/registration/verification
+Content-Type: application/json
+
+{
+  "phone": "998917162499",
+  "password": "79512"
+}
+
+### registration
+POST http://localhost:8080/api/v1/auth/registration
+Content-Type: application/json
+
+{
+
+  "phone": "998907463959",
+  "password": "123456",
+  "name": "Ali",
+  "surname": "Aliyev"
+}
+### reg validation
+POST http://localhost:8080/api/v1/auth/registration/verification
+Content-Type: application/json
+
+{
+  "phone": "940798273",
+  "code": "84214"
+}
+
+###  reset password
+POST http://localhost:9090/auth/reset-password
+Content-Type: application/json
+
+{
+  "phone": "+998907463959"
+}
+
+### reset password confirm
+PUT http://localhost:8080/auth/reset-password/confirm
+Content-Type: application/json
+
+{
+  "phone": "975187161",
+  "code": "79219",
+  "newPassword": "123456",
+  "repeatNewPassword": "123456"
+
+}

@@ -1,0 +1,27 @@
+### Create Post
+POST http://localhost:8080/post_attach/
+Content-Type: application/json
+
+{
+  "postId": "56338c66-4a0b-4756-b539-9c0cc25a9c2a",
+  "attachId": "44877e7c-d108-49e9-8339-da41df018d99"
+}
+
+### List
+GET http://localhost:8080/post_attach
+
+
+### Get by Id
+GET http://localhost:8080/post_attach/0a8bf6dd-0d42-4a24-b5d4-9c087c6950d5
+
+### Delete
+DELETE http://localhost:8080/post_attach/0a8bf6dd-0d42-4a24-b5d4-9c087c6950d5
+
+### Update
+PATCH http://localhost:8080/post_attach/63a2b2e3-a683-4caa-86b0-5b41a53b97a7
+Content-Type: application/json
+
+{
+  "postId": "fdfe93fc-22d5-4ceb-89de-05f5a86e9b37",
+  "attachId": "c789648e-cdc5-4ac4-8eb0-86dec5f24578"
+}

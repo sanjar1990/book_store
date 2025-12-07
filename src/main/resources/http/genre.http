@@ -1,0 +1,33 @@
+### create
+POST http://localhost:8080/api/v1/genre/create
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTEzNjU5ODcsInBob25lIjoiOTk4OTc1MTg3MTYxIiwicm9sZXMiOiJST0xFX0FETUlOLCBST0xFX1VTRVIiLCJleHAiOjE3MTE2MjUxODcsImlzcyI6ImtpdGFidSAgdGVzdCBwb3J0YWxpIn0.Jot4_KM7KAm-N32Rlmz49r4Jzq1Uik6oUW7QpkLHM30EWQcCUvPokossLBLF7AlYbInHpN_fJcZomLbQdiWw9w
+Content-Type: application/json
+
+{
+  "titleUz": "Badiy",
+  "titleEn": "Badiy",
+  "titleRu": "Badiy",
+  "orderNumber": 2
+}
+### update
+PUT http://localhost:8080/genre/update/8bbe611a-b68f-4d30-97ba-04aa9b2ccbcc
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDk5Nzk0NjIsInBob25lIjoiOTc1MTg3MTYxIiwicm9sZXMiOiJST0xFX1VTRVIiLCJleHAiOjE3MTAyMzg2NjIsImlzcyI6ImtpdGFidSAgdGVzdCBwb3J0YWxpIn0.zmXZWG8eUtG4Pb15-SY2q1jQloJANSXNjJZb7cIFazHbQamallBla4g86BazwVXHTPzeOWur3R6odVa-xAHTSw
+Content-Type: application/json
+
+{
+  "titleUz": "Badiiy adabiyot",
+  "titleEn": "Fiction",
+  "titleRu": "Вымысел",
+  "orderNumber": 1
+}
+### Delete
+DELETE http://localhost:8080/genre/delete/by/ca4a7dec-4910-496d-9c2d-14dd08120808
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDk5Nzk0NjIsInBob25lIjoiOTc1MTg3MTYxIiwicm9sZXMiOiJST0xFX1VTRVIiLCJleHAiOjE3MTAyMzg2NjIsImlzcyI6ImtpdGFidSAgdGVzdCBwb3J0YWxpIn0.zmXZWG8eUtG4Pb15-SY2q1jQloJANSXNjJZb7cIFazHbQamallBla4g86BazwVXHTPzeOWur3R6odVa-xAHTSw
+### get By Id
+GET http://localhost:8080/genre/get/by/8bbe611a-b68f-4d30-97ba-04aa9b2ccbcc
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDk5Nzk0NjIsInBob25lIjoiOTc1MTg3MTYxIiwicm9sZXMiOiJST0xFX1VTRVIiLCJleHAiOjE3MTAyMzg2NjIsImlzcyI6ImtpdGFidSAgdGVzdCBwb3J0YWxpIn0.zmXZWG8eUtG4Pb15-SY2q1jQloJANSXNjJZb7cIFazHbQamallBla4g86BazwVXHTPzeOWur3R6odVa-xAHTSw
+### get all by Lang for User and Admin
+GET http://localhost:8080/api/v1/genre/get/all/by/lang
+### get All for Admin
+GET http://localhost:8080/api/v1/genre/get/all
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTI4MzM2NDYsInBob25lIjoiOTk4OTc1MTg3MTYxIiwicm9sZXMiOiJST0xFX0FETUlOLCBST0xFX1VTRVIiLCJleHAiOjE3MTMwOTI4NDYsImlzcyI6ImtpdGFidSAgdGVzdCBwb3J0YWxpIn0.GUKbTFTcbZmFY_FWWLx2MI7xzVvXM_89QD8R-796RqQjGm_4e7rYefGgBemwqNL0KdxMCSOhEygnDA0CfrTA4g

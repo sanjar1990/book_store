@@ -1,0 +1,69 @@
+### create
+POST http://localhost:9090/api/v1/profile/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjcyNTYwNTcsInBob25lIjoiKzk5ODk3NTE4NzE2MSIsInJvbGVzIjoiIiwiZXhwIjoxNzI3NTE1MjU3LCJpc3MiOiJraXRhYnUgIHRlc3QgcG9ydGFsaSJ9.1VlhK27TtGHBMxXlk9E8Cp_Y1Z_g_hYznrTKig0Q037dTTIKi3BuVID_NqHzBnMDdHk7l7-5bOm5Ss3J8BhluA
+
+{
+  "phone": "931236547",
+  "password": "77777",
+  "name": "Test",
+  "surname": "Test",
+  "roleList": ["ROLE_USER"]
+
+}
+
+### update
+PUT http://localhost:8080/profile/update/
+
+### update phone
+PUT http://localhost:8080/api/v1/profile/update-phone/932222077
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTIyMzY5NzIsInBob25lIjoiOTk4OTc1MTg3MTYxIiwicm9sZXMiOiJST0xFX0FETUlOLCBST0xFX1VTRVIiLCJleHAiOjE3MTI0OTYxNzIsImlzcyI6ImtpdGFidSAgdGVzdCBwb3J0YWxpIn0.7wj3Kihk700z_se9-_hLDQ9vpT5jOyjwVNaKZ7ccAKHEcPY1-mnxYOd-xw_myIoMbzb1rnnIINHuITsLytDWRw
+
+### update phone verification
+PUT http://localhost:8080/api/v1/profile/phone-verification/95741
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTEzNjQ4MjUsInBob25lIjoiOTA3NDYzOTU5Iiwicm9sZXMiOiIiLCJleHAiOjE3MTE2MjQwMjUsImlzcyI6ImtpdGFidSAgdGVzdCBwb3J0YWxpIn0.gY8-oSF82UFXXKBkHbn6L6Owv9oUJLJNEyGPSD26EdGHdzzfwMmjL6O0rBTI87tGus_WQayWjmht-meB8x00JA
+###UPDATE DETEL
+PUT http://localhost:8080/api/v1/profile/detail
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTEyMjUzNDMsInBob25lIjoiOTA3NDYzOTU5Iiwicm9sZXMiOiIiLCJleHAiOjE3MTE0ODQ1NDMsImlzcyI6ImtpdGFidSAgdGVzdCBwb3J0YWxpIn0.KYck-Lsy40ct_8Nnh0Tx42uedhYi2S5PeKWBDS6DUPn_4Pt-QPAdGq4Modv0emzl2J9AuZ4cV6BeS2COI31YFw
+Accept-Language: ru
+
+{
+  "name": "Vali",
+  "surname": "Valiyev"
+}
+###UPDATE PASSWORD
+PUT http://localhost:8080/api/v1/profile/udatePassword
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTEyMjUzNDMsInBob25lIjoiOTA3NDYzOTU5Iiwicm9sZXMiOiIiLCJleHAiOjE3MTE0ODQ1NDMsImlzcyI6ImtpdGFidSAgdGVzdCBwb3J0YWxpIn0.KYck-Lsy40ct_8Nnh0Tx42uedhYi2S5PeKWBDS6DUPn_4Pt-QPAdGq4Modv0emzl2J9AuZ4cV6BeS2COI31YFw
+Accept-Language: ru
+
+{
+  "oldPassword": "7895",
+  "newPassword": "8895",
+  "confirmNewPassword": "8895"
+}
+### update photo
+PUT http://localhost:8080/api/v1/profile/update/photo/7613d1e7-cde8-4047-bcf4-26c089505092.jpg
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTIyMzY5NzIsInBob25lIjoiOTk4OTc1MTg3MTYxIiwicm9sZXMiOiJST0xFX0FETUlOLCBST0xFX1VTRVIiLCJleHAiOjE3MTI0OTYxNzIsImlzcyI6ImtpdGFidSAgdGVzdCBwb3J0YWxpIn0.7wj3Kihk700z_se9-_hLDQ9vpT5jOyjwVNaKZ7ccAKHEcPY1-mnxYOd-xw_myIoMbzb1rnnIINHuITsLytDWRw
+
+### Filter admin
+PUT http://localhost:9090/api/v1/profile/filter?page=1&size=10
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTg3NzkzOTcsInBob25lIjoiOTk4OTc1MTg3MTYxIiwicm9sZXMiOiJST0xFX0FETUlOLCBST0xFX1VTRVIiLCJleHAiOjE3MTkwMzg1OTcsImlzcyI6ImtpdGFidSAgdGVzdCBwb3J0YWxpIn0.R3gXuOo_YUGgu6zfHsxyY3EIjO1wFe2BDW7PA-n2vEHP0294gL3JsFHF1jfk9hDzRxxvywKmg38QHmoG5c78BQ
+Content-Type: application/json
+
+{
+  "nameOrSurname": "Mur"
+}
+
+### role Change
+PUT http://localhost:8081/api/v1/profile/change_role/f69801ad-5679-4a63-b236-ab8d15c7c3a0
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjAwOTIyMzUsInBob25lIjoiOTk4OTc1MTg3MTYxIiwicm9sZXMiOiJST0xFX0FETUlOLCBST0xFX1VTRVIsIFJPTEVfTU9ERVJBVE9SIiwiZXhwIjoxNzIwMzUxNDM1LCJpc3MiOiJraXRhYnUgIHRlc3QgcG9ydGFsaSJ9.Y5MV1h3PyfoOIQkVNZSskPBB8nhgGwMt5olzBfL8zIHnbh4j8CU4gemGdXg8VG_xtvnANoMUR2D5-mkwjbf1Uw
+Content-Type: application/json
+
+{
+  "roles": ["ROLE_ADMIN","ROLE_MODERATOR","ROLE_USER"]
+}
+####
+GET http://localhost:9090/api/v1/profile/get/all
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTg3NzkzOTcsInBob25lIjoiOTk4OTc1MTg3MTYxIiwicm9sZXMiOiJST0xFX0FETUlOLCBST0xFX1VTRVIiLCJleHAiOjE3MTkwMzg1OTcsImlzcyI6ImtpdGFidSAgdGVzdCBwb3J0YWxpIn0.R3gXuOo_YUGgu6zfHsxyY3EIjO1wFe2BDW7PA-n2vEHP0294gL3JsFHF1jfk9hDzRxxvywKmg38QHmoG5c78BQ

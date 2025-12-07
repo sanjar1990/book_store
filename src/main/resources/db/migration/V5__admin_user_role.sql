@@ -1,0 +1,2 @@
+INSERT INTO profile_role(id,  role ,profile_id,created_date, visible)
+values ('f69801ad-5679-4a63-b236-ab8d15c7c3a3','ROLE_USER','f69801ad-5679-4a63-b236-ab8d15c7c3a0', now(), true) on conflict  (id) do nothing;

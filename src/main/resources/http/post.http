@@ -1,0 +1,122 @@
+### Create Post
+POST http://localhost:8080/api/v1/post
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjYzMTU2NzEsInBob25lIjoiKzk5ODk3NTE4NzE2MSIsInJvbGVzIjoiUk9MRV9BRE1JTiwgUk9MRV9VU0VSIiwiZXhwIjoxNzI2NTc0ODcxLCJpc3MiOiJraXRhYnUgIHRlc3QgcG9ydGFsaSJ9.ZfCWjvuEMzDG-HrFo32NGLA9ACD5AP4Ken7ixZVHtEwT58tW_ED9vUrBv4VTmEnPfkZhg_6BBYueTCnSc2hvng
+
+{
+  "title": "delete test",
+  "description": "zor kitob ",
+  "exchangeType": "FREE",
+  "conditionType": "OLD",
+  "bookLanguage": "LATIN",
+  "bookPrintType": "PEREPLYOT",
+  "latitude": 10,
+  "longitude": 12,
+  "status": "ACTIVE",
+  "regionId": 11,
+  "attachIdList": [
+    "https://api.kitabu.uz/api/v1/attach/open/c2792516-92e0-4fd4-a58e-c1563d4503ba.jpg",
+    "https://api.kitabu.uz/api/v1/attach/open/ff1b08b6-887c-4991-b939-4b65f52ff954.jpg",
+    "https://api.kitabu.uz/api/v1/attach/open/81801afe-1a9e-498c-ad55-6c2d14afac12.jpg"
+  ],
+  "genreIdList": [
+    "b278925a-2549-4da5-a6ff-3ab70a0fe085"
+
+  ]
+}
+
+### Get post by id
+GET http://localhost:9090/api/v1/post/public/aa1b7c48-9163-447e-9c14-6de0ba7aa8cc
+
+### test
+###
+GET https://api.kitabu.uz/api/v1/post/public/filter
+Accept-Language: ru
+Content-Type: application/json
+
+{
+
+}
+
+### Get post by id as authorized user
+GET http://localhost:9090/api/v1/post/8c46ab4b-c8ea-45b2-a8e4-f87f21c96504
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjgwNzYwMjQsInBob25lIjoiKzk5ODkzMjIyMjA3NyIsInJvbGVzIjoiIiwiZXhwIjoxNzI4MzM1MjI0LCJpc3MiOiJraXRhYnUgIHRlc3QgcG9ydGFsaSJ9.Q_ptm-4TtH6aObAPM12Jy6v8DlKWUfw1WupBWvGy-_EFgVx1mETO3iWBlbLGRC58BWphayZh81cRUzRebOkoVw
+###
+DELETE http://localhost:9090/api/v1/post/delete/01e33e22-ae95-43ac-9180-ec91432cb698
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTk0OTU4MTAsInBob25lIjoiOTk4OTA4MDcwMTc2Iiwicm9sZXMiOiIiLCJleHAiOjE3MTk3NTUwMTAsImlzcyI6ImtpdGFidSAgdGVzdCBwb3J0YWxpIn0.eS0WQQlCS2nk8i9IwaqEcXHtVgkxNA6ciaxirpmwIG_VnfXqubg198Pwm9Ltc6Gd0LwT1Xpq1j6hVEldQteMQg
+
+### delete admin
+DELETE http://localhost:9090/api/v1/post/delete_admin/e9daeb9c-3965-4565-bd43-9977532b3032
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTk1Nzk1MTUsInBob25lIjoiOTk4OTc1MTg3MTYxIiwicm9sZXMiOiJST0xFX0FETUlOLCBST0xFX1VTRVIiLCJleHAiOjE3MTk4Mzg3MTUsImlzcyI6ImtpdGFidSAgdGVzdCBwb3J0YWxpIn0.zYkZz7CZ9VXUEsAsK8NYT-kZENRg0hl9h2K_PXlgzENF-EtnpUin3w4sy_lqlcPrr6r0rK0SHVvfCftIzgVINw
+
+
+### Update post by id
+PUT http://localhost:8080/api/v1/post/a65479e0-f05c-42d1-971f-a80e6e58b29f
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTA4MzAzMjgsInBob25lIjoiOTc1MTg3MTYxIiwicm9sZXMiOiJST0xFX0FETUlOIiwiZXhwIjoxNzExMDg5NTI4LCJpc3MiOiJraXRhYnUgIHRlc3QgcG9ydGFsaSJ9.V37dMxwQegLg7JyOIDJkXlaswbiIwlnGEN5PgyJ0IyS65ZaxAkeaFbjdUyb0IWsLLYafBo-KcRtHx3Ccl8GiOw
+
+{
+  "title": "title44444",
+  "description": "desc3",
+  "exchangeType": "EXCHANGE",
+  "conditionType": "OLD",
+  "bookLanguage": "EN",
+  "bookPrintType": "PAPER_BOOK",
+  "latitude": 10,
+  "longitude": 12,
+  "status": "ACTIVE",
+  "regionId": 6,
+  "attachIdList": [
+    "1a133541-3b8e-4f0c-acef-0f3841f9e7ad.jpg",
+    "7c1ebfa0-1ce2-4e6a-8e14-f058262c249b.jpg"
+  ],
+  "genreIdList": [
+    "a0a32e46-1836-496d-a7e1-2bd6d1907e0b",
+    "7acd39c8-296e-4b11-8893-557c448f1ac7"
+  ]
+}
+
+
+### Post public filter
+POST http://localhost:9090/api/v1/post/public/filter?page=1&size=10
+Accept-Language: en
+Content-Type: application/json
+
+{
+}
+
+### Post filter as admin
+POST http://localhost:9090/api/v1/post/filter_admin?page=1&size=10
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTkxNzU0MDgsInBob25lIjoiOTk4OTc1MTg3MTYxIiwicm9sZXMiOiJST0xFX0FETUlOLCBST0xFX1VTRVIiLCJleHAiOjE3MTk0MzQ2MDgsImlzcyI6ImtpdGFidSAgdGVzdCBwb3J0YWxpIn0.V0Qa6HIJRrUUhxvn8oRMZZYYBDQ7u6MLe9NkIvsamCepjuFqPlJqUhuSTkBzqbZS9xt0xTjER1Ahx6tg_x5Ykw
+
+{
+}
+
+
+### Get profileid post list
+GET http://localhost:9090/api/v1/post/profile?page=1&size=20&status=ACTIVE
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3Mjc2MTYzMjcsInBob25lIjoiKzk5ODkzMjIyMjA3NyIsInJvbGVzIjoiIiwiZXhwIjoxNzI3ODc1NTI3LCJpc3MiOiJraXRhYnUgIHRlc3QgcG9ydGFsaSJ9.nXPVtO3ZbNChj7ywdeFluAEbgQAFc5maejr7dAn_Oz2wR5e3F5M-L8K2mMZo2WBAyP4xvxcVsH3Z0Ntt3yCy1Q
+
+### change status for admin
+PUT http://localhost:9090/api/v1/post/status_admin?postId=2d383f6c-e52b-4199-993d-9befb1938ea6&status=NOT_ACTIVE
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTkxNzU0MDgsInBob25lIjoiOTk4OTc1MTg3MTYxIiwicm9sZXMiOiJST0xFX0FETUlOLCBST0xFX1VTRVIiLCJleHAiOjE3MTk0MzQ2MDgsImlzcyI6ImtpdGFidSAgdGVzdCBwb3J0YWxpIn0.V0Qa6HIJRrUUhxvn8oRMZZYYBDQ7u6MLe9NkIvsamCepjuFqPlJqUhuSTkBzqbZS9xt0xTjER1Ahx6tg_x5Ykw
+
+
+####
+GET http://localhost:8080/api/v1/post/all?page=1&size=2&status=ACTIVE
+
+### have been Liked
+GET http://localhost:9090/api/v1/post/liked
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjI5NDM1ODMsInBob25lIjoiKzk5ODkzMjIyMjA3NyIsInJvbGVzIjoiIiwiZXhwIjoxNzIzMjAyNzgzLCJpc3MiOiJraXRhYnUgIHRlc3QgcG9ydGFsaSJ9.mXhkEM98TPrOT7jXXGzOPAOuuaa3v-jynl3q8HeiBYjQYD4Xe-Mdo7MkPKyddF4iBeMpLUR7afjekATAyb0Dxg
+
+### have been Dis Liked
+GET http://localhost:9090/api/v1/post/dis_liked
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTc5Mjk3MjEsInBob25lIjoiOTk4OTc1MTgxNTE0Iiwicm9sZXMiOiIiLCJleHAiOjE3MTgxODg5MjEsImlzcyI6ImtpdGFidSAgdGVzdCBwb3J0YWxpIn0.509gQHRgMZWNTtyfM4IDXLUjdTPJurxKGfDMX4CNCCbcdpngs6GjLCSMs3SxJFgSFzkzuToB3-f45HfxCQF6jA
+
+### status update
+PUT https://api.kitabu.uz/api/v1/post/status/f75894cf-e65c-4be8-9ce6-64baf278c44f
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTM1MzEyNDAsInBob25lIjoiOTQ2OTkyMTkwIiwicm9sZXMiOiIiLCJleHAiOjE3MTM3OTA0NDAsImlzcyI6ImtpdGFidSAgdGVzdCBwb3J0YWxpIn0.ui0ak572HwjXRyWYZCGT7UOriwZT2ktJh3zHPqWiChuAYaabycsypqQkMe3NLr9osCHDvF_HBcUyRXrwt-QRmQ
+
+### get last posts profile
+GET http://localhost:9090/api/v1/post/public/profilePosts/5e3a2391-9a1b-4bc6-b9d7-db17ccb8cf64

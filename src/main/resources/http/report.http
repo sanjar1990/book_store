@@ -1,0 +1,9 @@
+###
+POST http://localhost:9090/api/v1/report/create
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3Mjg3MzQyNzIsInBob25lIjoiKzk5ODkwNzQ2Mzk1OSIsInJvbGVzIjoiUk9MRV9VU0VSIiwiZXhwIjoxNzI4OTkzNDcyLCJpc3MiOiJraXRhYnUgIHRlc3QgcG9ydGFsaSJ9.mndbx_25K_5CMp_CKdQz56jnlerYOO_4UB8aDLDivLsCPLpk_vxIQX7KvA6I3JlUqkX1Cqjb3ihoH8FxWNdvUA
+Content-Type: application/json
+
+{
+  "title": "Assalomu bu content pornografik ekan iltimos olib tashlang",
+  "postId": "c3c8630f-2105-40d0-93e0-149628fc2f05"
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function makeRequest() {
+            var xhttp = new XMLHttpRequest();
+            var userObj = {phone: "915721213", password: "12345",name: "Ali",surname: "Aliyev"};
+            var jsonBody = JSON.stringify(userObj);
+
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("result").innerText = this.responseText;
+                }
+            };
+            xhttp.open("POST", "https://api.kitabu.uz/api/v1/auth/registration", true);
+            xhttp.setRequestHeader("Content-Type", "application/json");
+            // xhttp.setRequestHeader("Accept-Language", "uz");
+            xhttp.send(jsonBody);
+        }
+
+    </script>
+</head>
+<body>
+<br>
+<h3>User yaratish uchun Mazgi buttonni bosing</h3>
+<button onclick="makeRequest()"> Mazgi</button>
+<div id="result" style="padding: 10px">
+</body>
+</html>

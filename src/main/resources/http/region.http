@@ -1,0 +1,37 @@
+### CREATE REGION
+POST http://localhost:8080/api/v1/region/
+Content-Type: application/json
+
+
+{
+  "nameUz": "asdad",
+  "nameRu": "dfssfd",
+  "nameEn": "asfadada"
+}
+
+### REGION DELETE
+DELETE http://localhost:8080/api/v1/region/15
+
+### REGION UPDATE
+PUT http://localhost:8080/api/v1/region/15
+Content-Type: application/json
+
+{
+  "nameUz": "",
+  "nameRu": "Ali",
+  "nameEn": ""
+}
+
+### by lang region list
+GET localhost:8080/api/v1/region/by-lang
+#Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2OTgyMjg0OTYsImlkIjoiOTA5MTMzZmUtODFhZC00YWExLWI1ZmUtMzBkNDJkNzViYjNkIiwicGhvbmUiOiI5OTg5MzgwODA4MzEiLCJyb2xlcyI6IlJPTEVfQURNSU4iLCJleHAiOjE2OTg4MzMyOTYsImlzcyI6IkphdmEgYmFja2VuZCJ9.LjV-w4Oe2u0eqbZVfTbtuBUg2-KasrOe8TMZUscrXcHyVEJYnNJ6nAo1S48q61-v2tNCZZtOQ0pc4_uGa4lvhg
+
+### get region
+GET localhost:8080/api/v1/region/20
+#Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2OTgyMjg0OTYsImlkIjoiOTA5MTMzZmUtODFhZC00YWExLWI1ZmUtMzBkNDJkNzViYjNkIiwicGhvbmUiOiI5OTg5MzgwODA4MzEiLCJyb2xlcyI6IlJPTEVfQURNSU4iLCJleHAiOjE2OTg4MzMyOTYsImlzcyI6IkphdmEgYmFja2VuZCJ9.LjV-w4Oe2u0eqbZVfTbtuBUg2-KasrOe8TMZUscrXcHyVEJYnNJ6nAo1S48q61-v2tNCZZtOQ0pc4_uGa4lvhg
+
+### get region list admin
+GET localhost:8080/api/v1/region
+#Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2OTgyMjg0OTYsImlkIjoiOTA5MTMzZmUtODFhZC00YWExLWI1ZmUtMzBkNDJkNzViYjNkIiwicGhvbmUiOiI5OTg5MzgwODA4MzEiLCJyb2xlcyI6IlJPTEVfQURNSU4iLCJleHAiOjE2OTg4MzMyOTYsImlzcyI6IkphdmEgYmFja2VuZCJ9.LjV-w4Oe2u0eqbZVfTbtuBUg2-KasrOe8TMZUscrXcHyVEJYnNJ6nAo1S48q61-v2tNCZZtOQ0pc4_uGa4lvhg
+
+

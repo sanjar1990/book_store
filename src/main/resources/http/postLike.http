@@ -1,0 +1,11 @@
+### create like
+POST http://localhost:9090/api/v1/post_like/like_system
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjEzMDA5NDUsInBob25lIjoiKzk5ODk3NTE4NzE2MSIsInJvbGVzIjoiIiwiZXhwIjoxNzIxNTYwMTQ1LCJpc3MiOiJraXRhYnUgIHRlc3QgcG9ydGFsaSJ9.-nUYuQyQVC5093Td5ncHb_pZFqOyvK2qMZl6MmR3hTzqkcNDx7YSggmSJPy__tOewTLbUGPeyDUaP8Gav2v8GA
+Content-Type: application/json
+
+{
+  "postId": "61264db7-9101-416f-ade5-d719569a5fe5",
+  "status": "DISLIKE"
+}
+
+

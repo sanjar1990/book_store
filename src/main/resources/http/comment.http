@@ -1,0 +1,46 @@
+### Create Commnet
+POST http://localhost:8080/api/v1/comment
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTQ5MzI5MTUsInBob25lIjoiOTk4OTc1MTg3MTYxIiwicm9sZXMiOiJST0xFX0FETUlOLCBST0xFX1VTRVIiLCJleHAiOjE3MTUxOTIxMTUsImlzcyI6ImtpdGFidSAgdGVzdCBwb3J0YWxpIn0.RLV-sYSzZVknse31q-pRLnsDRRPjTZ2M7eem5_018pHVg0PoQbVJq8hjv-KDoXG8NMPoUvZF9EppREdTVgtpnQ
+
+{
+  "content": "maruf123",
+  "postId": "9f397535-fe39-43f7-a795-619cdb19c927"
+}
+
+###Get Comment
+GET http://localhost:8080/api/v1/comment/b115888d-5b0b-40b7-a26c-0de63a432b18
+###GETAll
+GET https://api.kitabu.uz/api/v1/comment
+###Delete
+DELETE http://localhost:8080/api/v1/comment/b115888d-5b0b-40b7-a26c-0de63a432b18
+###Paging
+GET http://localhost:8080/api/v1/comment/pagination/dd2c2bff-759f-4d5c-8058-ac0c62e95d7c?page=1&size=3
+###Paging by Profile Id
+GET http://localhost:8080/api/v1/comment/paginationByProfileId?page=1&size=10
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTQ5MzI5MTUsInBob25lIjoiOTk4OTc1MTg3MTYxIiwicm9sZXMiOiJST0xFX0FETUlOLCBST0xFX1VTRVIiLCJleHAiOjE3MTUxOTIxMTUsImlzcyI6ImtpdGFidSAgdGVzdCBwb3J0YWxpIn0.RLV-sYSzZVknse31q-pRLnsDRRPjTZ2M7eem5_018pHVg0PoQbVJq8hjv-KDoXG8NMPoUvZF9EppREdTVgtpnQ
+
+### comment filter user
+POST http://localhost:9090/api/v1/comment/public/filter
+Content-Type: application/json
+
+{
+  "commentId": "151021eb-9077-4c9e-9fda-36a8cb11b252",
+  "postId": "29527c3e-430a-42b8-a3c1-ddfed1e318f8"
+}
+
+### comment filer admin
+POST http://localhost:9090/api/v1/comment/filter_admin
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTQ5MzI5MTUsInBob25lIjoiOTk4OTc1MTg3MTYxIiwicm9sZXMiOiJST0xFX0FETUlOLCBST0xFX1VTRVIiLCJleHAiOjE3MTUxOTIxMTUsImlzcyI6ImtpdGFidSAgdGVzdCBwb3J0YWxpIn0.RLV-sYSzZVknse31q-pRLnsDRRPjTZ2M7eem5_018pHVg0PoQbVJq8hjv-KDoXG8NMPoUvZF9EppREdTVgtpnQ
+
+{
+  "profileId": "d0bb22b1-d0f9-41de-b9dd-b9331bab323e"
+}
+###IsRead
+PUT http://localhost:8080/api/v1/comment/isReadByCommentId/877263a7-69e7-41a1-90b0-5171e465eeea?isRead=true
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTQ5MzI5MTUsInBob25lIjoiOTk4OTc1MTg3MTYxIiwicm9sZXMiOiJST0xFX0FETUlOLCBST0xFX1VTRVIiLCJleHAiOjE3MTUxOTIxMTUsImlzcyI6ImtpdGFidSAgdGVzdCBwb3J0YWxpIn0.RLV-sYSzZVknse31q-pRLnsDRRPjTZ2M7eem5_018pHVg0PoQbVJq8hjv-KDoXG8NMPoUvZF9EppREdTVgtpnQ
+
+{
+}
